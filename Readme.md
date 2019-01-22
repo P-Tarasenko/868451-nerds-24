@@ -1,8 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Тарасенко](https://up.htmlacademy.ru/htmlcss/24/user/868451).
-* Наставник: [Андрей Колесников].
-(https://htmlacademy.ru/profile/m1roku).
+* Наставник: [Андрей Колесников](https://htmlacademy.ru/profile/m1roku).
 
 ---
 
