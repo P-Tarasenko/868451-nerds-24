@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1 class="visually-hidden">Дизайн-студия Нёрдс.</h1>
-    <img class="main-logo" src="img/nerds-logo.svg" width="160px" height="65px" alt="Nerds">
+    <img class="main-logo" src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип студии Nerds">
     <nav class="main-nav">
       <ul class="nav-list">
         <li class="nav-list__item"><a href="#">Студия</a></li>
@@ -58,6 +58,37 @@
     <p><strong>Давайте дружить, это выгодно!</strong></p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+      <ul>
+        <li class="modal-form-item">
+          <p>
+            <label>
+              Ваше имя:<input class="modal-form-input" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </p>
+        </li>
+        <li class="modal-form-item">
+          <p>
+            <label>
+              Ваш e-mail:<input class="modal-form-input" type="email" name="email" placeholder="email@example.com">
+            </label>
+          </p>
+        </li>
+        <li class="modal-form-item">
+          <p>
+            <label>
+              Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+        </li>
+      </ul>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
   <!-- 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>

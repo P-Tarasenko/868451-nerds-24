@@ -30,11 +30,65 @@
     <!-- Еще одна область для будущего -->
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <h3>Сетка:</h3>
-      <!--Тут будет форма с чекбоксами-->
-      <h3>Особенности:</h3>
-      <!--Еще одна форма-->
-      <span class="button">Показать</span>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>
+            <h3>Сетка:</h3>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive">Адаптивная
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="filter-input filter-input-radio" type="radio" name="grid" value="fixed">Фиксированная
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber">Резиновая
+                </label>
+              </li>
+            </ul>
+          </legend>
+
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h3>Особенности:</h3>
+          </legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+                <input class="filter-input filter-input-checkbox" name="slider" type="checkbox" checked>Слайдер
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="filter-input filter-input-checkbox" name="advantages" type="checkbox">Блок преимуществ
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="filter-input filter-input-checkbox" name="news" type="checkbox" checked>Новости
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="filter-input filter-input-checkbox" name="gallery" type="checkbox">Галерея
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="filter-input filter-input-checkbox" name="basket" type="checkbox">Корзина
+              </label>
+            </li>
+          </ul>
+
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Наши предложения</h2>
@@ -47,7 +101,7 @@
             <div class="catalog-list__window">
               <h4>Sedona</h4>
               <p>Информационный сайт для туристов</p>
-              <a class="catalog-list__button" href="#">9 900 РУБ.</a>
+              <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
             </div>
           </article>
         </li>
@@ -124,6 +178,36 @@
     <p><strong>Давайте дружить, это выгодно!</strong></p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+      <ul>
+        <li class="modal-form-item">
+          <p>
+            <label>
+              Ваше имя:<input class="modal-form-input" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </p>
+        </li>
+        <li class="modal-form-item">
+          <p>
+            <label>
+              Ваш e-mail:<input class="modal-form-input" type="email" name="email" placeholder="email@example.com">
+            </label>
+          </p>
+        </li>
+        <li class="modal-form-item">
+          <p>
+            <label>
+              Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+        </li>
+      </ul>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
 </body>
 
