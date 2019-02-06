@@ -4,10 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1 class="visually-hidden">Дизайн-студия Нёрдс.</h1>
     <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
     <nav class="main-nav">
@@ -23,30 +26,33 @@
     </nav>
   </header>
   <main class="container">
-    <div class="slider-text">
-      <p><strong>Долго, дорого, скрупулезно.</strong></p>
-      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-      <!--Пока не определился, кнопка или ссылка, не понятно что делает-->
-      <button class="button" type="button">Узнать больше</button>
-    </div>
-    <div class="slider-image">
-      <ul class="slides-switches">
-        <li class="slide-radio">
-          <button class="slide-btn">
-            Первый слайд
-          </button>
-        </li>
-        <li class="slide-radio">
-          <button class="slide-btn">
-            Второй слайд
-          </button>
-        </li>
-        <li class="slide-radio">
-          <button class="slide-btn">
-            Третий слайд
-          </button>
-        </li>
-      </ul>
+    <div class="slider">
+      <!--Думаю сладер в мэйне, а потом стилизацией приклеится к хедеру-->
+      <div class="slider-text">
+        <p><strong>Долго, дорого, скрупулезно.</strong></p>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+        <!--Пока не определился, кнопка или ссылка, не понятно что делает-->
+        <button class="button">Узнать больше</button>
+      </div>
+      <div class="slider-image">
+        <ul class="slides-switches">
+          <li class="slide-radio">
+            <button class="slide-btn">
+              Первый слайд
+            </button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">
+              Второй слайд
+            </button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">
+              Третий слайд
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
     <section class="service">
       <h2 class="visually-hidden">Услуги студии</h2>
@@ -88,8 +94,23 @@
       <div class="about-us-img">
         <!--Тут фоновое изображение-->
         <p>C 2004 года любим точность во всем:</p>
+        <table>
+          <tr class="hr">
+            <th>146<sup>%</sup></th>
+            <th>140<sup>%</sup></th>
+            <th>50<sup>%</sup></th>
+          </tr>
+          <tr class="sr">
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+        <!--  Думаю такой вариант не очень
+
         <p><span>146<sup>%</sup></span> <span>140<sup>%</sup></span> <span>50<sup>%</sup></span></p>
         <p><span>Уровень самоотдачи</span> <span>Соблюдение сроков</span> <span>Минимальная предоплата</span></p>
+       -->
       </div>
     </section>
     <section class="partners">
@@ -103,6 +124,7 @@
   <div class="map">
     <img src="img/map.jpg" alt="Студия Nerds по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
     <img src="img/map-marker.svg" alt="">
+    <!--Потом поменять местами, так как сейчас видимо из-за позиционирования,не видно СВГ,а ЖПГ съезжает-->
     <div class="write-us">
       <h3 class="visually-hidden">Напишите нам</h3>
       <p><strong>Nёrds design studio</strong></p>
@@ -126,23 +148,21 @@
       <ul>
         <li class="modal-form-item">
           <p>
-            <label>
-              Ваше имя:<input class="modal-form-input" type="text" name="name" placeholder="Имя Фамилия">
-            </label>
+            <label for="name">Ваше имя:</label>
+            <input class="modal-form-input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
           </p>
         </li>
         <li class="modal-form-item">
           <p>
-            <label>
-              Ваш e-mail:<input class="modal-form-input" type="email" name="email" placeholder="email@example.com">
-            </label>
+            <label for="email">Ваш e-mail:</label>
+            <input class="modal-form-input" type="email" name="email" id="email" placeholder="email@example.com"
+              required>
           </p>
         </li>
         <li class="modal-form-item">
           <p>
-            <label>
-              Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea>
-            </label>
+            <label for="comment">Текст письма:</label>
+            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
           </p>
         </li>
       </ul>

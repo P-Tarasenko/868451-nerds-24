@@ -1,0 +1,348 @@
+.header {
+  background-color: #eeeeee;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+.main-nav {
+  font-weight: 500;
+  line-height: 30px;
+  color: black;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav a {
+  color: black;
+} 
+.main-nav a:hover {
+  color: #fb565a;
+}
+
+.main-nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-logo:hover {
+  opacity: 0.8;
+}
+
+.main-logo:active {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-text strong {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: black;
+}
+
+.button {
+  font: inherit;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.button-2 {
+  background-color: #00ca74;
+}
+
+.button-2:hover {
+  background-color: #00bc6c;
+}
+
+.button-3 {
+  background-color: #efc84a;
+}
+
+.button-3:hover {
+  background-color: #eab534;
+}
+
+.service h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+
+.service-list__item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-us-text strong {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: black;
+}
+
+.about-us-text h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.about-us-img p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.hr {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 10px;
+  color: black;
+}
+
+.sr {
+  line-height: 18px;
+}
+
+.write-us strong {
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.write-us p:nth-of-type(2) {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+footer strong {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  color: black;
+}
+
+footer p:nth-child(3) {
+  line-height: 22px;
+  color: #444444;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.about-us-text ul {
+  list-style: none;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.modal-form ul {
+  list-style: none;
+}
+
+footer p {
+  text-align: center;
+}
+
+.partners a {
+  opacity: 0.2;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.partners a:active {
+  opacity: 0.1;
+}
+
+.modal h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: black;
+}
+
+.modal-form-item label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+}
+
+.modal-form input {
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+}
+
+.modal-form input:hover {
+  background-color: #ffffff;
+  border: 2px solid #b4b9bb;
+}
+
+.modal-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid black;
+}
+
+.modal-form-input:invalid {
+  color: #e74246;
+
+  background-color: #ffffff;
+  border: 2px solid #e74246;
+}
+
+.header-shop h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: black;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: black;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+
+  background-color: #eeeeee;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog-list__window {
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.catalog-list__window p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-list__window h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+
+
+.pagination-list a {
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: black;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+} 
+
+.pagination-list a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-form-item textarea {
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+}
+
+.modal-form-item textarea:hover {
+  background-color: #ffffff;
+  border: 2px solid #b4b9bb;
+}
+
+.modal-form-item textarea:focus {
+  background-color: #ffffff;
+  border: 2px solid black;
+}

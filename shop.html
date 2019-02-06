@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-shop">
-    <h1 class="visually-hidden">Дизайн-студия Нёрдс.</h1>
+  <header class="header header-shop">
     <a href="index.html">
       <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
     </a>
@@ -86,7 +88,7 @@
           </ul>
 
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="button filter-button" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog">
@@ -112,7 +114,7 @@
             <div class="catalog-list__window">
               <h4>Pink APP</h4>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="catalog-list__button" href="#">9 900 РУБ.</a>
+              <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
             </div>
           </article>
         </li>
@@ -124,7 +126,7 @@
             <div class="catalog-list__window">
               <h4>Barbershop</h4>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="catalog-list__button" href="#">9 900 РУБ.</a>
+              <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
             </div>
           </article>
         </li>
@@ -136,7 +138,7 @@
             <div class="catalog-list__window">
               <h4>Mishka</h4>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="catalog-list__button" href="#">9 900 РУБ.</a>
+              <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
             </div>
           </article>
         </li>
@@ -148,7 +150,7 @@
             <div class="catalog-list__window">
               <h4>A+</h4>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="catalog-list__button" href="#">9 900 РУБ.</a>
+              <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
             </div>
           </article>
         </li>
@@ -160,10 +162,16 @@
             <div class="catalog-list__window">
               <h4>КВАСТ</h4>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="catalog-list__button" href="#">9 900 РУБ.</a>
+              <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
             </div>
           </article>
         </li>
+      </ul>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">Следующая</a></li>
       </ul>
     </section>
   </main>
@@ -192,23 +200,21 @@
       <ul>
         <li class="modal-form-item">
           <p>
-            <label>
-              Ваше имя:<input class="modal-form-input" type="text" name="name" placeholder="Имя Фамилия">
-            </label>
+            <label for="name">Ваше имя:</label>
+            <input class="modal-form-input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
           </p>
         </li>
         <li class="modal-form-item">
           <p>
-            <label>
-              Ваш e-mail:<input class="modal-form-input" type="email" name="email" placeholder="email@example.com">
-            </label>
+            <label for="email">Ваш e-mail:</label>
+            <input class="modal-form-input" type="email" name="email" id="email" placeholder="email@example.com"
+              required>
           </p>
         </li>
         <li class="modal-form-item">
           <p>
-            <label>
-              Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea>
-            </label>
+            <label for="comment">Текст письма:</label>
+            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
           </p>
         </li>
       </ul>
