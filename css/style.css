@@ -1,4 +1,4 @@
-.header { 
+.header {
   padding-top: 50px;
 
   background-color: #eeeeee;
@@ -22,20 +22,23 @@ body {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+
+  clip: rect(0 0 0 0);
 }
 
 .main-nav {
+  flex-grow: 1;
   /* display: flex;
   justify-content: space-between; */
   /* min-width: 860px; */
+
   font-weight: 500;
   line-height: 1.9;
   color: black;
-  flex-grow: 1;
   /* margin-top: 50px; */
 }
 
@@ -55,7 +58,7 @@ body {
 
 .main-nav a {
   color: black;
-} 
+}
 .main-nav a:hover {
   color: #fb565a;
 }
@@ -258,17 +261,24 @@ a {
   border: 2px solid #e74246;
 }
 
-.header-shop {
+/* .header-shop {
   background-color: #eeeeee;
   padding-top: 50px;
-}
+} */
 
 .main-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 115px;
+
   font-weight: 500;
   font-size: 55px;
   line-height: 1;
   text-align: center;
   color: black;
+
+  background-color: #eeeeee;
 }
 
 .filters fieldset {
@@ -344,7 +354,7 @@ a {
 .pagination-item-current a {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
-} 
+}
 
 .pagination-list a:hover {
   background-color: #dfdfdf;
@@ -388,19 +398,19 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(235, 29, 173, 0.5);
-} 
+} */
 
 html,
 body {
   min-width: 1440px;
-} */
+}
 
 
-.container {  
+.container {
   display: block;
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;  
+  padding: 0 20px;
 }
 /* .header .container {
   display: flex;
@@ -499,7 +509,7 @@ body {
 }
 
 .footer {
-  display: flex;  
+  display: flex;
 }
 
 .ffd {
@@ -509,16 +519,16 @@ body {
 
 /* РАЗМЕТКА СТРАНИЦЫ МАГАЗИНА */
 
-.header-shop {
-  /* display: flex;
-  flex-direction: column; */
-  min-height: 355px;
+/* .header-shop {
+   display: flex;
+  flex-direction: column; 
+  min-height: 355px; 
   margin-bottom: 60px;
-}
+} */
 
-.main-title {
+/* .main-title {
   order: 1;
-}
+} */
 
 /* .main-nav-shop {
   justify-content: space-between;
@@ -574,14 +584,20 @@ body {
 .nav-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 .main-logo {
-  margin-right: 200px;  
+  margin-right: 200px;
 }
 
-.header-shop .container {
-  display: flex;
-  flex-direction: column;
+/* .c1 {
+ padding-top: 50px;
+ padding-bottom: 50px;
+} */
+
+.background-shop {
+  margin-bottom: 0;
+
+  background-color: #eeeeee;
 }
