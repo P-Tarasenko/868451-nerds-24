@@ -1,28 +1,40 @@
-.header {
-  display: flex;
+.header { 
+  padding-top: 50px;
 
   background-color: #eeeeee;
 }
+
+
+
+
 body {
   margin: 0;
   padding: 0;
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-family: "Roboto", Arial, sans-serif;
   color: #283136;
 
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.9;
   color: black;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 /* .basket {
@@ -66,13 +78,13 @@ a {
 .slider-text strong {
   font-weight: 500;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
   color: black;
 }
 
 .button {
   font: inherit;
-  line-height: 18px;
+  line-height: 1.13;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
@@ -112,70 +124,66 @@ a {
 .service h3 {
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   color: black;
 }
 
-.service-list__item p {
+/* .service-list__item p {
   font-size: 16px;
-  line-height: 24px;
-}
+  line-height: 1.5;
+} */
 
 .about-us-text strong {
   font-weight: 500;
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   color: black;
 }
 
 .about-us-text h4 {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   color: black;
 }
 
 .about-us-img p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   color: black;
 }
 
 .hr {
   font-weight: 500;
   font-size: 45px;
-  line-height: 10px;
+  line-height: 1;
   color: black;
 }
 
 .sr {
-  line-height: 18px;
+  line-height: 1.1;
 }
 
 .write-us__bold {
   font-weight: 500px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.66;
   color: black;
   text-transform: uppercase;
 }
 
 .write-us__address {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: #666666;
 }
 
 .footer-bold {
   font-weight: 500;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   color: black;
 }
 
 .footer-sale {
-  line-height: 22px;
+  line-height: 1.38;
   color: #444444;
 }
 
@@ -212,14 +220,14 @@ a {
 .modal h2 {
   font-weight: 500;
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   color: black;
 }
 
 .modal-form-item label {
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: black;
 }
 
@@ -249,12 +257,13 @@ a {
 
 .header-shop {
   background-color: #eeeeee;
+  padding-top: 50px;
 }
 
 .main-title {
   font-weight: 500;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
   text-align: center;
   color: black;
 }
@@ -266,21 +275,21 @@ a {
 .filters legend {
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.66;
   text-align: left;
   color: black;
 }
 
 .filter ul {
   list-style: none;
-  line-height: 20px;
+  line-height: 1.25;
   color: #283136;
 }
 
 .filter-button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: black;
 
   background-color: #eeeeee;
@@ -308,21 +317,21 @@ a {
 }
 
 .catalog-list__window p {
-  line-height: 18px;
+  line-height: 1.13;
   color: #666666;
 }
 
 .catalog-list__window h4 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.66;
   color: black;
 }
 
 
 .pagination-list a {
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   text-align: center;
   color: black;
 
@@ -362,7 +371,7 @@ a {
   border: 2px solid black;
 }
 /* НАЧАЛО ПОСТРОЕНИЯ СЕТОК */
-/* body > * {
+body > * {
   background-color: rgba(38, 185, 24, 0.5);
 }
 
@@ -376,7 +385,7 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(235, 29, 173, 0.5);
-}  */
+} 
 
 html,
 body {
@@ -384,11 +393,11 @@ body {
 }
 
 
-.container {
+.container {  
   display: block;
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px;  
 }
 /* .header .container {
   display: flex;
