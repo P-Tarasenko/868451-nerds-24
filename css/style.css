@@ -18,13 +18,14 @@ body {
 
 .main-nav {
   display: flex;
-
+  justify-content: space-between;
   font-weight: 500;
   line-height: 30px;
   color: black;
+  margin-top: 50px;
 }
 
-.basket {
+/* .basket {
   font-weight: 500;
   line-height: 30px;
   color: black;
@@ -32,7 +33,7 @@ body {
 
 .basket a {
   color: black;
-}
+} */
 
 .main-nav ul {
   list-style: none;
@@ -361,7 +362,7 @@ a {
   border: 2px solid black;
 }
 /* НАЧАЛО ПОСТРОЕНИЯ СЕТОК */
-body > * {
+/* body > * {
   background-color: rgba(38, 185, 24, 0.5);
 }
 
@@ -375,7 +376,7 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(235, 29, 173, 0.5);
-} 
+}  */
 
 html,
 body {
@@ -389,11 +390,11 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-.header .container {
+/* .header .container {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-}
+} */
 
 
 .nav-list,
@@ -486,12 +487,12 @@ body {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
 }
 
 .ffd {
-  margin-right: 216px;
+  margin-right: auto;
+  margin-left: 35px;
 }
 
 /* РАЗМЕТКА СТРАНИЦЫ МАГАЗИНА */
@@ -507,9 +508,9 @@ body {
   order: 1;
 }
 
-.main-nav-shop {
+/* .main-nav-shop {
   justify-content: space-between;
-}
+} */
 
 .container-flex {
   display: flex;
