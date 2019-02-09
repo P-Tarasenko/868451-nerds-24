@@ -29,11 +29,13 @@ body {
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  /* min-width: 860px; */
   font-weight: 500;
   line-height: 1.9;
   color: black;
+  flex-grow: 1;
   /* margin-top: 50px; */
 }
 
@@ -80,6 +82,7 @@ a {
   font-size: 55px;
   line-height: 1;
   color: black;
+  /* min-width: 380px; */
 }
 
 .button {
@@ -413,7 +416,7 @@ body {
 }
 
 .basket {
-  width: 125px;
+  /* width: 125px; */
 }
 
 .nav-list {
@@ -431,7 +434,7 @@ body {
 }
 
 .slider-text {
-  width: 376px;
+  min-width: 380px;
   margin-top: 80px;
   margin-right: 55px;
 }
@@ -507,8 +510,8 @@ body {
 /* РАЗМЕТКА СТРАНИЦЫ МАГАЗИНА */
 
 .header-shop {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   min-height: 355px;
   margin-bottom: 60px;
 }
@@ -566,4 +569,19 @@ body {
   min-width: 50px;
   min-height: 50px;
   margin-right: 11px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.main-logo {
+  margin-right: 200px;  
+}
+
+.header-shop .container {
+  display: flex;
+  flex-direction: column;
 }
