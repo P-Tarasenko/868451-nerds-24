@@ -11,51 +11,57 @@
 
 <body>
   <header class="header">
-    <h1 class="visually-hidden">Дизайн-студия Нёрдс.</h1>
-    <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li class="nav-list__item"><a href="#">Студия</a></li>
-        <li class="nav-list__item"><a href="#">Клиенты</a></li>
-        <li class="nav-list__item"><a href="shop.html">Магазин</a></li>
-        <li class="nav-list__item"><a href="#">Контакты</a></li>
-      </ul>
+    <!-- <h1 class="visually-hidden">Дизайн-студия Нёрдс.</h1> -->
+    <div class="container">
+      <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#">Студия</a></li>
+          <li class="nav-list__item"><a href="#">Клиенты</a></li>
+          <li class="nav-list__item"><a href="shop.html">Магазин</a></li>
+          <li class="nav-list__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
       <p class="basket">
         <a href="#">Корзина</a>
       </p>
-    </nav>
+    </div>
   </header>
-  <main class="container">
-    <div class="slider">
-      <!--Думаю сладер в мэйне, а потом стилизацией приклеится к хедеру-->
-      <div class="slider-text">
-        <p><strong>Долго, дорого, скрупулезно.</strong></p>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <!--Пока не определился, кнопка или ссылка, не понятно что делает-->
-        <button class="button">Узнать больше</button>
-      </div>
-      <div class="slider-image">
-        <ul class="slides-switches">
-          <li class="slide-radio">
-            <button class="slide-btn">
-              Первый слайд
-            </button>
-          </li>
-          <li class="slide-radio">
-            <button class="slide-btn">
-              Второй слайд
-            </button>
-          </li>
-          <li class="slide-radio">
-            <button class="slide-btn">
-              Третий слайд
-            </button>
-          </li>
-        </ul>
+  <div class="background">
+    <div class="container">
+      <div class="slider">
+        <!--Думаю сладер в мэйне, а потом стилизацией приклеится к хедеру-->
+        <div class="slider-text">
+          <p><strong>Долго,дорого, скрупулезно.</strong></p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <!--Пока не определился, кнопка или ссылка, не понятно что делает-->
+          <button class="button">Узнать больше</button>
+        </div>
+        <div class="slider-image">
+          <ul class="slides-switches">
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Первый слайд
+              </button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Второй слайд
+              </button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Третий слайд
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+  <main class="container">
     <section class="service">
-      <h2 class="visually-hidden">Услуги студии</h2>
+      <!-- <h2 class="visually-hidden">Услуги студии</h2> -->
       <ul class="service-list">
         <li class="service-list__item">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
@@ -78,7 +84,7 @@
       </ul>
     </section>
     <section class="about-us">
-      <h2 class="visually-hidden">О нас</h2>
+      <!-- <h2 class="visually-hidden">О нас</h2> -->
       <div class="about-us-text">
         <p><strong>Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
@@ -114,16 +120,17 @@
       </div>
     </section>
     <section class="partners">
-      <h2 class="visually-hidden">Партнеры</h2>
-      <a href="https://up.htmlacademy.ru/htmlcss/24"><img src="img/academy-logo.png" alt="Ссылка на сайт HTML Academy"></a>
-      <a href="#"><img src="img/borodinski-logo.png" alt="Ссылка на сайт барбершопа 'Borodinski'"></a>
-      <a href="#"><img src="img/pink-logo.png" alt="Ссылка на сайт 'Pink'"></a>
-      <a href="#"><img src="img/mishka-logo.png" alt="Ссылка на сайт 'Mishka'"></a>
+      <!-- <h2 class="visually-hidden">Партнеры</h2> -->
+      <a class="academy" href="https://up.htmlacademy.ru/htmlcss/24"><img src="img/academy-logo.png" alt="Ссылка на сайт HTML Academy"
+          width="199" height="68"></a>
+      <a href="#"><img src="img/borodinski-logo.png" alt="Ссылка на сайт барбершопа 'Borodinski'" width="209" height="90"></a>
+      <a href="#"><img src="img/pink-logo.png" alt="Ссылка на сайт 'Pink'" width="185" height="52"></a>
+      <a class="mishka" href="#"><img src="img/mishka-logo.png" alt="Ссылка на сайт 'Mishka'" width="173" height="84"></a>
     </section>
   </main>
   <div class="map">
     <img src="img/map.jpg" alt="Студия Nerds по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
-    <img src="img/map-marker.png" alt="">
+    <!-- <img src="img/map-marker.png" alt=""> -->
     <!--Потом поменять местами, так как сейчас видимо из-за позиционирования,не видно СВГ,а ЖПГ съезжает-->
     <div class="write-us">
       <h3 class="visually-hidden">Напишите нам</h3>
@@ -132,14 +139,16 @@
       <button class="button" type="button">Напишите нам</button>
     </div>
   </div>
-  <footer>
+  <footer class="footer container">
     <ul class="social-list">
       <li><a class="social-list__link" href="https://vk.com">Вконтакте</a></li>
       <li><a class="social-list__link" href="https://ru-ru.facebook.com">Фейсбук</a></li>
       <li><a class="social-list__link" href="https://www.instagram.com">Инстаграм</a></li>
     </ul>
-    <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
-    <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+    <div class="ffd">
+      <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
+      <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
 
   <section class="modal">

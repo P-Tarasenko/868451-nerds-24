@@ -1,4 +1,6 @@
 .header {
+  display: flex;
+
   background-color: #eeeeee;
 }
 body {
@@ -15,8 +17,20 @@ body {
 }
 
 .main-nav {
+  display: flex;
+
   font-weight: 500;
   line-height: 30px;
+  color: black;
+}
+
+.basket {
+  font-weight: 500;
+  line-height: 30px;
+  color: black;
+}
+
+.basket a {
   color: black;
 }
 
@@ -47,9 +61,6 @@ a {
   text-decoration: none;
 }
 
-.slider {
-  background-color: #eeeeee;
-}
 
 .slider-text strong {
   font-weight: 500;
@@ -167,9 +178,6 @@ a {
   color: #444444;
 }
 
-.service-list {
-  list-style: none;
-}
 
 .about-us-list {
   list-style: none;
@@ -238,7 +246,11 @@ a {
   border: 2px solid #e74246;
 }
 
-.header-shop h1 {
+.header-shop {
+  background-color: #eeeeee;
+}
+
+.main-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -347,4 +359,201 @@ a {
 .modal-form-item textarea:focus {
   background-color: #ffffff;
   border: 2px solid black;
+}
+/* НАЧАЛО ПОСТРОЕНИЯ СЕТОК */
+body > * {
+  background-color: rgba(38, 185, 24, 0.5);
+}
+
+body > * > * {
+  background-color: rgba(227, 240, 48, 0.5);
+}
+
+body > * > * > * {
+  background-color: rgba(29, 32, 235, 0.5);
+}
+
+body > * > * > * > * {
+  background-color: rgba(235, 29, 173, 0.5);
+} 
+
+html,
+body {
+  min-width: 1440px;
+}
+
+
+.container {
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+
+.nav-list,
+.basket {
+  margin: 0;
+  padding: 0;
+}
+
+.basket {
+  width: 125px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 440px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #eeeeee;
+}
+
+.slider-text {
+  width: 376px;
+  margin-top: 80px;
+  margin-right: 55px;
+}
+
+.slider-image {
+  min-width: 698px;
+  min-height: 413px;
+  margin-right: 32px;
+}
+
+.background {
+  margin-bottom: 80px;
+
+  background-color: #eeeeee;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service-list__item {
+  width: 300px;
+}
+
+.service-list__item:last-of-type {
+  margin-right: 60px;
+}
+
+.service {
+  margin-bottom: 160px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-text {
+  margin-right: 150px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  margin-top: 140px;
+}
+
+.academy {
+  margin-left: 30px;
+}
+
+.mishka {
+  margin-right: 43px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ffd {
+  margin-right: 216px;
+}
+
+/* РАЗМЕТКА СТРАНИЦЫ МАГАЗИНА */
+
+.header-shop {
+  display: flex;
+  flex-direction: column;
+  min-height: 355px;
+  margin-bottom: 60px;
+}
+
+.main-title {
+  order: 1;
+}
+
+.main-nav-shop {
+  justify-content: space-between;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  min-width: 260px;
+  height: 705px;
+  margin-right: 140px;
+}
+
+.catalog {
+  min-width: 760px;
+  min-height: 1915px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.catalog-list__item {
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 33px;
+}
+
+.catalog-list__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  min-width: 50px;
+  min-height: 50px;
+  margin-right: 11px;
 }
