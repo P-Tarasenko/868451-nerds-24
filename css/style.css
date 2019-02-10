@@ -545,11 +545,16 @@ body > * > * > * > * > * {
 }
 
 .main-logo { 
-  margin-right: 200px;  
+  margin-right: 200px; 
+  display: block; 
 }
 
 .background-shop {
   margin-bottom: 0;
 
   background-color: #eeeeee;
+}
+
+.display-img {
+  display: block;
 }
