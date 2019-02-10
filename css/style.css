@@ -405,22 +405,23 @@ body > * > * > * > * > * {
 .nav-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   width: 440px;
   list-style: none;
+  /*Можно подогнать текст на свое место position: relative*/
 }
 
 .slider {
   display: flex;
   justify-content: space-between;
-
+  align-items: center; /*Выравнивать либо так, либо маргином у нижнего класса*/
   background-color: #eeeeee;
 }
 
 .slider-text {
   width: 380px; /*Была минимальная ширина*/
-  margin-top: 80px;
-  margin-right: 55px;
+  /* margin-top: 80px; */
+  margin-right: 55px;  
 }
 
 .slider-image {
