@@ -1,11 +1,7 @@
-.header {
-  padding-top: 50px;
-
-  background-color: #eeeeee;
+html,
+body {
+  min-width: 1440px;
 }
-
-
-
 
 body {
   margin: 0;
@@ -18,6 +14,12 @@ body {
   color: #283136;
 
   background-color: #ffffff;
+}
+
+.header {
+  padding-top: 50px;
+
+  background-color: #eeeeee;
 }
 
 .visually-hidden {
@@ -37,10 +39,6 @@ body {
   line-height: 1.9;
   color: black;
   text-transform: uppercase;  
-}
-
-.main-nav ul {
-  list-style: none;
 }
 
 .main-nav a {
@@ -391,24 +389,12 @@ body > * > * > * > * > * {
   background-color: rgba(235, 29, 29, 0.5);
 } */
 
-html,
-body {
-  min-width: 1440px;
-}
-
-
 .container {
   display: block;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
-/* .header .container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-} */
-
 
 .nav-list,
 .basket {
@@ -416,15 +402,12 @@ body {
   padding: 0;
 }
 
-/* .basket {
-   width: 125px; 
-} */
-
 .nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 440px;
+  list-style: none;
 }
 
 .slider {
@@ -487,8 +470,7 @@ body {
 .partners {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* min-height: 90px; */
+  align-items: center;  
   margin-top: 140px;
 }
 
@@ -511,21 +493,6 @@ body {
 
 /* РАЗМЕТКА СТРАНИЦЫ МАГАЗИНА */
 
-/* .header-shop {
-   display: flex;
-  flex-direction: column; 
-  min-height: 355px; 
-  margin-bottom: 60px;
-} */
-
-/* .main-title {
-  order: 1;
-} */
-
-/* .main-nav-shop {
-  justify-content: space-between;
-} */
-
 .container-flex {
   display: flex;
   justify-content: space-between;
@@ -538,8 +505,7 @@ body {
 }
 
 .catalog {
-  width: 760px;
-  /* min-height: 1915px; */
+  width: 760px;  
 }
 
 .catalog-list {
@@ -562,7 +528,6 @@ body {
 
 .pagination-list {
   display: flex;
-  /* min-height: 50px; */
   margin: 0;
   padding: 0;
 }
@@ -579,14 +544,9 @@ body {
   align-items: center;
 }
 
-.main-logo {
-  margin-right: 200px;
+.main-logo { 
+  margin-right: 200px;  
 }
-
-/* .c1 {
- padding-top: 50px;
- padding-bottom: 50px;
-} */
 
 .background-shop {
   margin-bottom: 0;
