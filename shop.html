@@ -42,6 +42,22 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтры</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 5%; width: 60%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
             <fieldset>
               <legend>
                 Сетка:
@@ -111,7 +127,7 @@
                 </a>
                 <div class="catalog-list__window">
                   <h4>Sedona</h4>
-                  <p>Информационный сайт для туристов</p>
+                  <p>Информационный сайт<br> для туристов</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
               </article>
@@ -189,12 +205,13 @@
   </main>
   <div class="map">
     <img class="display-map" src="img/map.jpg" alt="Студия Nerds по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
-    <img src="img/map-marker.svg" alt="">
+    <img class="map-marker" src="img/map-marker.png" alt="">
     <div class="write-us">
       <h3 class="visually-hidden">Напишите нам</h3>
-      <p><strong class="write-us__bold">Nёrds design studio</strong></p>
-      <p class="write-us__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>тел. +7 (812) 275-75-75</p>
-      <button class="button" type="button">Напишите нам</button>
+      <p class="paragraph-headline"><strong class="write-us__bold">Nёrds design studio</strong></p>
+      <p class="write-us__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+      <p class="paragraph-phone">тел. +7 (812) 275-75-75</p>
+      <button class="button write-us-button" type="button">Напишите нам</button>
     </div>
   </div>
   <footer class="footer container">
