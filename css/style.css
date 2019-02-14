@@ -992,6 +992,66 @@ background-color: #d7373b;
   padding-top: 30px;
 }
 
+.modal {
+  width: 960px;
+  height: 590px;
+  background-color: #00ca74;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  /* display: flex;
+  flex-direction: column; */
+  padding: 73px 100px 84px 100px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -1000px;
+  left: 50px;
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-form-item {
+  flex-grow: 1;
+  width: 360px;  
+}
+
+.modal-form-item:first-of-type {
+  padding-right: 40px;
+}
+
+.modal-form-item p {
+  display: flex;
+  flex-direction: column;  
+}
+
+.modal-form-input {
+  height: 50px;
+  padding-left: 16px;  
+  line-height: 1.13;
+  color: rgba(68, 68, 68, 0.5);
+  border-radius: 3px;
+}
+
+.modal-form-item label {
+  margin-bottom: 12px;
+}
+
+.modal-form-item textarea {
+  height: 118px;
+  padding: 14px 0 0 15px;
+  border-radius: 3px;
+  line-height: 1.13;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal-close {
+  position: absolute;
+}
+
 /* .catalog-list__article a::before {
   content: "";
   width: 360px;
