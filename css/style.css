@@ -348,15 +348,18 @@ sup {
   line-height: 1.67;
   text-align: left;
   color: black;
+  text-transform: uppercase;
 }
 
 .filter ul {
   list-style: none;
   line-height: 1.25;
   color: #283136;
+  padding: 0;
+  margin: 0;
 }
 
-.filter-button {
+.filter .filter-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.13;
@@ -365,7 +368,8 @@ sup {
   background-color: #eeeeee;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   background-color: #dfdfdf;
 }
 
@@ -407,14 +411,22 @@ sup {
   line-height: 1.13;
   text-align: center;
   color: black;
+  display: inline-block;
+  padding: 16px 21px; 
+  text-transform: uppercase; 
 
   background-color: #eeeeee;
+  border-radius: 3px;
 }
 
-.pagination-item-current a {
-  background-color: #ffffff;
-  border: 3px solid #dbdbdb;
+.pagination-list .next {
+  padding: 16px 76px;
 }
+
+/* .pagination-item-current a {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;  
+} */
 
 .pagination-list a:hover {
   background-color: #dfdfdf;
@@ -586,14 +598,16 @@ body > * > * > * > * > * {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 26px;
   padding: 0;
 }
 
 .catalog-list__item {
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 33px;
+  margin-bottom: 33px;   
+  /* outline: 1px solid red;
+  outline-offset: -1px; */
 }
 
 .catalog-list__item:nth-child(2n) {
@@ -604,12 +618,14 @@ body > * > * > * > * > * {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   margin-right: 10px;
+  box-sizing: border-box;  
 }
 
 .nav-row {
@@ -963,27 +979,25 @@ background-color: #d7373b;
 
 .catalog-list__button {
   width: 200px;
+  margin: 0 auto; 
 }
 
 .catalog-list__article {
-  position: relative;    
-}
-
-.catalog-list__article img {
-  position: relative;
-  /* z-index: 10;   */
-}
-
-.catalog-list__article img:hover,
-.catalog-list__article img:focus {
-  z-index: 0;
+  position: relative;     
 }
 
 .catalog-list__window {
   position: absolute;
   bottom: 0px;  
   width: 100%;
-  height: 231px;  
+  height: 231px;
+  display: none;  
+}
+
+.catalog-list__item:hover .catalog-list__window,
+.catalog-list__item:focus .catalog-list__window {
+  /* z-index: 10; */
+  display: block;
 }
 
 .catalog-list__window h4 {
@@ -1030,9 +1044,7 @@ background-color: #d7373b;
 
 .modal-form-input {
   height: 50px;
-  padding-left: 16px;  
-  line-height: 1.13;
-  color: rgba(68, 68, 68, 0.5);
+  padding-left: 16px; 
   border-radius: 3px;
 }
 
@@ -1044,15 +1056,16 @@ background-color: #d7373b;
   height: 118px;
   padding: 14px 0 0 15px;
   border-radius: 3px;
-  line-height: 1.13;
-  color: rgba(68, 68, 68, 0.5);
+  /* line-height: 1.13;
+  color: rgba(68, 68, 68, 0.5); */
   margin-bottom: 37px;
+  resize: none;
 }
 
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 48px;
+  right: 90px;
   width: 21px;
   height: 21px;
   background-color: #ffffff;
@@ -1070,14 +1083,25 @@ background-color: #d7373b;
   opacity: 0.1;
 }
 
-/* .catalog-list__article a::before {
+.catalog-list__item::before {
   content: "";
   width: 360px;
   height: 40px;
   background-image: url("../img/browser.svg");
-  background-repeat: no-repeat;
-  background-color: blue;  
-} */
+  background-repeat: no-repeat;  
+  display: block;
+  opacity: 0.12;  
+}
+
+.catalog-list__item:hover::before {
+  opacity: 1;
+}
+
+.filter-option {
+  display: flex;
+  padding: 11px 0;
+  align-items: center;     
+}
 
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
 

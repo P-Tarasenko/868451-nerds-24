@@ -64,19 +64,16 @@
               </legend>
               <ul>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive">Адаптивная
-                  </label>
+                  <input class="filter-input filter-input-radio" type="radio" id="adaptive" name="grid" value="adaptive">
+                  <label for="adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-radio" type="radio" name="grid" value="fixed">Фиксированная
-                  </label>
+                  <input class="filter-input filter-input-radio" type="radio" id="fixed" name="grid" value="fixed">
+                  <label for="fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber">Резиновая
-                  </label>
+                  <input class="filter-input filter-input-radio" type="radio" id="rubber" name="grid" value="rubber">
+                  <label for="rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -86,30 +83,24 @@
               </legend>
               <ul>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-checkbox" name="slider" type="checkbox" checked>Слайдер
-                  </label>
+                  <input class="filter-input filter-input-checkbox" id="slider" name="slider" type="checkbox" checked>
+                  <label for="slider">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-checkbox" name="advantages" type="checkbox">Блок
-                    преимуществ
-                  </label>
+                  <input class="filter-input filter-input-checkbox" id="advantages" name="advantages" type="checkbox">
+                  <label for="advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-checkbox" name="news" type="checkbox" checked>Новости
-                  </label>
+                  <input class="filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked>
+                  <label for="news">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-checkbox" name="gallery" type="checkbox">Галерея
-                  </label>
+                  <input class="filter-input filter-input-checkbox" id="gallery" name="gallery" type="checkbox">
+                  <label for="gallery">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input filter-input-checkbox" name="basket" type="checkbox">Корзина
-                  </label>
+                  <input class="filter-input filter-input-checkbox" id="card" name="card" type="checkbox">
+                  <label for="card">Корзина</label>
                 </li>
               </ul>
 
@@ -139,7 +130,7 @@
                 </a>
                 <div class="catalog-list__window">
                   <h4>Pink APP</h4>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
               </article>
@@ -151,7 +142,7 @@
                 </a>
                 <div class="catalog-list__window">
                   <h4>Barbershop</h4>
-                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <p>Сайт салона красоты. <br>Для мужчин, да.</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
               </article>
@@ -163,7 +154,7 @@
                 </a>
                 <div class="catalog-list__window">
                   <h4>Mishka</h4>
-                  <p>Интернет-магазин вязаных игрушек</p>
+                  <p>Интернет-магазин <br>вязаных игрушек</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
               </article>
@@ -171,11 +162,11 @@
             <li class="catalog-list__item">
               <article class="catalog-list__article">
                 <a href="#">
-                  <img class="display-img" src="img/A+.jpg" width="360" height="576" alt="Ссылка на демонстрацию A+">
+                  <img class="display-img" src="img/aplus.jpg" width="360" height="576" alt="Ссылка на демонстрацию A+">
                 </a>
                 <div class="catalog-list__window">
                   <h4>A+</h4>
-                  <p>Лендинг курсов повышения квалификации</p>
+                  <p>Лендинг курсов повышения <br>квалификации</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
               </article>
@@ -187,7 +178,7 @@
                 </a>
                 <div class="catalog-list__window">
                   <h4>КВАСТ</h4>
-                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <p>Промо-сайт производителя <br>крафтового кваса</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
               </article>
@@ -197,7 +188,7 @@
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
+            <li class="pagination-item"><a class="next" href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -253,7 +244,7 @@
       </ul>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
 </body>
