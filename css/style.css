@@ -9,7 +9,7 @@ body {
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.5;  
   font-family: "Roboto", Arial, sans-serif;
   color: #283136;
 
@@ -327,7 +327,7 @@ sup {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 80px;
-  padding-bottom: 115px;
+  padding-bottom: 107px;
 
   font-weight: 500;
   font-size: 55px;
@@ -364,6 +364,7 @@ sup {
   font-size: 16px;
   line-height: 1.13;
   color: black;
+  width: 260px;  
 
   background-color: #eeeeee;
 }
@@ -640,7 +641,7 @@ body > * > * > * > * > * {
 }
 
 .background-shop {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 
   background-color: #eeeeee;
 }
@@ -997,7 +998,7 @@ background-color: #d7373b;
 .catalog-list__item:hover .catalog-list__window,
 .catalog-list__item:focus .catalog-list__window {
   /* z-index: 10; */
-  display: block;
+  display: block;  
 }
 
 .catalog-list__window h4 {
@@ -1097,10 +1098,89 @@ background-color: #d7373b;
   opacity: 1;
 }
 
+.catalog-list__item:hover {
+  box-shadow: 0px 6px 15px 0 rgba(0, 1, 1, 0.25);
+}
+
+.filter fieldset {
+  padding: 0;
+}
+
 .filter-option {
   display: flex;
-  padding: 11px 0;
-  align-items: center;     
+  padding-bottom: 16px;  
+  align-items: center;
+  position: relative;     
+}
+
+.filter-option-margin {
+  margin-bottom: 25px;
+}
+
+.filter-grid {
+  margin-bottom: 13px;
+}
+
+.filter-input {
+  display: none;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  /* background-position: left center; */
+  padding-left: 35px;
+  opacity: 0.4;
+  vertical-align: top;
+}
+
+.filter-feature {
+  margin-bottom: 12px;
+}
+
+.filter-option-feature {
+  padding-bottom: 14px;
+}
+
+.filter-input-radio:checked + label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  height: 27px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  padding-left: 35px;
+  opacity: 0.4;
+  vertical-align: top;
+}
+
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-size: 27px 23px;
+}
+
+.filter-input:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input:disabled + label::before {
+  opacity: 0.1;
+}
+
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.fieldset-feature {
+  margin-bottom: 29px;
 }
 
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
@@ -1108,6 +1188,7 @@ background-color: #d7373b;
 .filter-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 58px;
   
   border: none; 
 }
@@ -1122,6 +1203,7 @@ background-color: #d7373b;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.6px;
 }
 
 .range-controls {
