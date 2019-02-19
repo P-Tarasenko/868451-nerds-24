@@ -10,7 +10,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #283136;
 
   background-color: #ffffff;
@@ -285,6 +285,7 @@ sup {
 }
 
 .partners a {
+  position: relative;
   opacity: 0.2;
 }
 
@@ -589,7 +590,7 @@ body > * > * > * > * > * {
   width: 660px;
 }
 
-.partners {
+.partners {  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1154,6 +1155,21 @@ body > * > * > * > * > * {
 
 .fieldset-feature {
   margin-bottom: 29px;
+}
+
+.right-line::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: black;
+  top: 0;
+  left: 250px;
+
+}
+
+.pic {
+  margin-bottom: 36px;  
 }
 
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
