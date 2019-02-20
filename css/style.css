@@ -1250,22 +1250,33 @@ margin-left: 20px;
 margin-right: -7px;
 }
 
-.filter-inside-list a {
-  opacity: 0.3;
-  color: black;
+.filter-inside-list a {  
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.filter-inside-list .item-icon {
-  opacity: 0.2;
+.item-icon {
+  opacity: 0.2;  
+}
+
+.item-icon path {
+  fill: #a6a6a6;
+}
+
+.item-icon:hover {  
+  opacity: 1;
 }
 
 .filter-inside-list a:hover {
-opacity: 0.6;
+color: rgba(0, 0, 0, 0.6);
 }
 
 .filter-inside-list a:active,
 .filter-inside-list .filter-current {
-  opacity: 1;
+  color: black;
+}
+
+.item-icon:active path {
+  fill: #231F20;
 }
 
 .pic {
