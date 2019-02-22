@@ -1070,7 +1070,7 @@ body > * > * > * > * > * {
   padding: 0 100px 84px 100px;
 
   background-color: #ffffff;
-  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);  
 }
 
 .modal-form-item {
@@ -1297,6 +1297,30 @@ color: rgba(0, 0, 0, 0.6);
   height: 2px;
 
   background-color: #fb565a;
+}
+
+.modal-show {
+display: block;
+
+animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
