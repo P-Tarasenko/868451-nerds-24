@@ -69,6 +69,8 @@ form.addEventListener("submit", function (evt) {
   
 })
 
+// Добавление имени пользователя и email адреса в LocalStorage, если добавить required в input у формы.
+
 // form.addEventListener("submit", function (evt) {
 //   if (user.value && email.value) {    
 //     if (isStorageSupport) {
