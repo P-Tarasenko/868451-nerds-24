@@ -44,6 +44,7 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 })
 
 window.addEventListener("keydown", function(evt) {
@@ -51,17 +52,30 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 })
 
 form.addEventListener("submit", function (evt) {
-  if (user.value && email.value) {    
-    if (isStorageSupport) {
-      localStorage.setItem("user", user.value);
-    }
+  if (!user.value || !email.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) { localStorage.setItem("user", user.value); }
     if (isStorageEmailSupport) {
-      localStorage.setItem("email", email.value);
-    }
+    localStorage.setItem("email", email.value); }
   }
-});
+  
+})
+
+// form.addEventListener("submit", function (evt) {
+//   if (user.value && email.value) {    
+//     if (isStorageSupport) {
+//       localStorage.setItem("user", user.value);
+//     }
+//     if (isStorageEmailSupport) {
+//       localStorage.setItem("email", email.value);
+//     }
+//   }
+// });
