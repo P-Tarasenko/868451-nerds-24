@@ -63,6 +63,22 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+    if (!user.value) {
+      user.classList.add("modal-error-border");
+      user.addEventListener("keydown", function() {
+        if (user.classList.contains("modal-error-border")) {
+          user.classList.remove("modal-error-border");
+        }
+      })
+    }
+    if(!email.value) {
+      email.classList.add("modal-error-border");
+      email.addEventListener("keydown", function() {
+        if (email.classList.contains("modal-error-border")) {
+          email.classList.remove("modal-error-border");
+        }
+      })
+    }
   } else {
     if (isStorageSupport) { localStorage.setItem("user", user.value); }
     if (isStorageEmailSupport) {
