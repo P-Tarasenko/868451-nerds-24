@@ -149,7 +149,8 @@ a {
 
 .service-list__item p {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 33px;  
+  width: 260px;
 }
 
 .column-left strong {
@@ -432,6 +433,7 @@ sup {
   align-items: center;
   width: 100%;
   min-height: 231px;
+  padding-bottom: 10px;
 
   text-align: center;
 
@@ -440,7 +442,7 @@ sup {
 
 .catalog-list__window p {
   line-height: 1.13;
-  color: #666666;
+  color: #666666; 
 }
 
 .catalog-list__window h4 {
@@ -1133,7 +1135,7 @@ body > * > * > * > * > * {
 
 .catalog-list__button {
   width: 200px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 .catalog-list__article {
