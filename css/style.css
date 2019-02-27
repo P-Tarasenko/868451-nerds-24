@@ -1159,6 +1159,7 @@ sup {
 
   background-color: #ffffff;
   background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
   border: none;
   opacity: 0.3;
 }
