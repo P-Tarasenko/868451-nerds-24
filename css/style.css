@@ -1528,7 +1528,7 @@ body > * > * > * > * > * {
 
 .map iframe {
   border: none;
-  min-width: 1200px;
+  width: 100%;
 }
 
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
