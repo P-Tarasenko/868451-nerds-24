@@ -27,24 +27,18 @@ img {
   background-color: #eeeeee;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .main-nav {
@@ -1307,9 +1301,12 @@ body > * > * > * > * > * {
   background-size: 27px 23px;
 }
 
-.filter-input:hover + label::before,
 .filter-input:focus + label::before {
   opacity: 1;
+}
+
+.filter-input + label:hover::before {
+opacity: 1;
 }
 
 .filter-input:disabled + label::before {
