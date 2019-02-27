@@ -1526,6 +1526,11 @@ body > * > * > * > * > * {
   border: 2px solid red;
 }
 
+.map iframe {
+  border: none;
+  min-width: 1200px;
+}
+
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
 
 .filter-item {
