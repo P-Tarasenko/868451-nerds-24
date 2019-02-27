@@ -1527,8 +1527,10 @@ body > * > * > * > * > * {
 }
 
 .map iframe {
-  border: none;
   width: 100%;
+  min-width: 1200px;
+
+  border: none;
 }
 
 /* СТИЛИЗАЦИЯ СЛОЖНОГО ФИЛЬТРА МАГАЗИНА */
