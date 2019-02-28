@@ -451,6 +451,7 @@ a {
 .pagination-list a {
   display: inline-block;
   padding: 16px 21px;
+  vertical-align: center;
 
   font-weight: 500;
   line-height: 1.13;
@@ -556,26 +557,46 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
+  /* -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between; */
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 
   list-style: none;
 }
 
 .service-list__item {
   width: 300px;
+  padding-top: 146px;
+  margin-bottom: 80px;
+  margin-right: 100px;
 }
 
-.service-list__item:last-of-type {
-  margin-right: 60px;
+.service-list__item-sites {
+  background-image: url("../img/illustration-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.service-list__item-apps {
+  background-image: url("../img/illustration-2.jpg");
+  background-repeat: no-repeat;
+}
+
+.service-list__item-presentations {
+  background-image: url("../img/illustration-3.jpg");
+  background-repeat: no-repeat;
+}
+
+.service-list__item:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .service {
   margin-bottom: 40px;
-  padding-bottom: 79px;
+  padding-right: 60px;
+  /* padding-bottom: 10px; */
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -662,6 +683,7 @@ a {
   padding-right: 43px;
   padding-bottom: 41px;
   padding-left: 30px;
+  flex-wrap: wrap;
 
   list-style: none;
 
@@ -716,7 +738,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   padding: 0;
 }
 
@@ -826,6 +848,7 @@ a {
   position: relative;
 
   display: inline-block;
+  vertical-align: center;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -1586,6 +1609,7 @@ a {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  vertical-align: center;
 
   font-size: 16px;
   text-transform: uppercase;
@@ -1608,4 +1632,9 @@ a {
 
 .max-price {
   text-align: right;
+}
+
+.filter-item .bar {
+  margin-left: 5%;
+  width: 60%;
 }
