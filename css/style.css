@@ -264,11 +264,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
+  /* -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between; */
   width: 260px;
-  padding: 0;
+  padding: 0;  
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -438,42 +439,36 @@ a {
 }
 
 .sedona-description {
- background-color: rgb(236, 102, 102);
  width: 200px;
  margin-left: auto;
  margin-right: auto; 
 }
 
 .pink-description {
- background-color: rgb(236, 102, 102);
  width: 260px;
  margin-left: auto;
  margin-right: auto;
 }
 
 .borodinski-description {
- background-color: rgb(236, 102, 102);
  width: 200px;
  margin-left: auto;
  margin-right: auto; 
 }
 
 .mishka-description {
-  background-color: rgb(236, 102, 102);
   width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .aplus-description {
-  background-color: rgb(236, 102, 102);
   width: 260px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .kvast-description {
-  background-color: rgb(236, 102, 102);
   width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -1044,11 +1039,11 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   padding-top: 33px;
   padding-left: 50px;
 
-  background-color: #ffffff;
+  background-color: #ffffff;  
 }
 
 .write-us-button {
@@ -1119,10 +1114,18 @@ a {
   -ms-flex-align: center;
   align-items: center;
   width: 79px;
-  height: 79px;
+  height: 79px;  
 
   background-color: #e1e1e1;
   border-radius: 50%;
+}
+
+.social-list__item {
+  margin-right: 12px;
+}
+
+.social-list__item:nth-child(3n) {
+margin-right: -1px;
 }
 
 .social-list__link:hover,
