@@ -225,10 +225,11 @@ a {
 
 .write-us__address {
   margin-bottom: 0;
+  width: 205px;
 
   font-size: 16px;
   line-height: 1.13;
-  color: #666666;
+  color: #666666;  
 }
 
 .footer-bold {
@@ -434,6 +435,48 @@ a {
 .catalog-list__window p {
   line-height: 1.13;
   color: #666666;
+}
+
+.sedona-description {
+ background-color: rgb(236, 102, 102);
+ width: 200px;
+ margin-left: auto;
+ margin-right: auto; 
+}
+
+.pink-description {
+ background-color: rgb(236, 102, 102);
+ width: 260px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.borodinski-description {
+ background-color: rgb(236, 102, 102);
+ width: 200px;
+ margin-left: auto;
+ margin-right: auto; 
+}
+
+.mishka-description {
+  background-color: rgb(236, 102, 102);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aplus-description {
+  background-color: rgb(236, 102, 102);
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kvast-description {
+  background-color: rgb(236, 102, 102);
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catalog-list__window h4 {
