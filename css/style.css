@@ -211,7 +211,7 @@ a {
   padding-left: 8px;
 }
 
-sup {
+.hr sup {
   font-size: 28px;
 }
 
@@ -304,19 +304,19 @@ sup {
   font-weight: 500;
   font-size: 45px;
   line-height: 1;
-  color: black;
+  color: black;  
 }
 
 .modal-form-item label {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.13;
-  color: black;
+  color: black;  
 }
 
 .modal-form input {
-  height: 50px;
-  padding-left: 16px;
+  height: 45px;
+  padding-left: 16px;  
 
   font: inherit;
 
@@ -485,9 +485,9 @@ sup {
 }
 
 .modal-form-item textarea {
-  height: 118px;
-  margin-bottom: 37px;
-  padding: 14px 0 0 15px;
+  height: 105px;
+  margin-bottom: 32px;
+  padding: 5px 0 0 15px;
 
   font: inherit;
 
@@ -506,6 +506,10 @@ sup {
 .modal-form-item textarea:focus {
   background-color: #ffffff;
   border: 2px solid black;
+}
+
+.modal-button {
+  width: 260px;
 }
 
 .container {
@@ -983,7 +987,7 @@ sup {
 
 .write-us-button {
   width: 219px;
-  margin: 0;
+  margin: 0;  
 }
 
 .paragraph-headline {
@@ -993,6 +997,7 @@ sup {
 .paragraph-phone {
   margin-bottom: 33px;
   padding-bottom: 1px;
+  color: #666666;
 }
 
 .map-marker {
@@ -1108,16 +1113,16 @@ sup {
 
 .modal {
   position: fixed;
-  bottom: 140px;
+  bottom: 180px;
   left: 50%;
 
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 960px;
-  min-height: 590px;
+  height: 590px;
   margin-left: -480px;
-  padding: 0 100px 84px 100px;
+  padding: 30px 100px 84px 100px;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1128,11 +1133,15 @@ sup {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  width: 360px;
+  width: 360px;  
 }
 
 .modal-form-item:first-of-type {
   padding-right: 40px;
+}
+
+.modal-form-item:last-of-type {
+  padding-top: 10px;
 }
 
 .modal-form-item p {
@@ -1143,6 +1152,7 @@ sup {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
       flex-direction: column;
+      margin-top: 4px;
 }
 
 .modal-form-item label {
@@ -1151,7 +1161,7 @@ sup {
 
 .modal-close {
   position: absolute;
-  top: 48px;
+  top: 77px;
   right: 90px;
 
   width: 21px;
@@ -1353,6 +1363,11 @@ sup {
 
 .item-icon:active path {
   fill: #231f20;
+}
+
+.item-icon-current path{
+  fill: #231f20;
+  opacity: 1;
 }
 
 .pic {
