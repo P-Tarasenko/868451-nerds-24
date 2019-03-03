@@ -671,6 +671,24 @@ a {
   transform: translate(-13px, -3px);
 }
 
+.academy-item {
+  /* background-color: rgb(190, 141, 141); */
+  width: 250px;
+  margin-right: 56px;
+}
+
+.barbershop-item {
+  /* background-color: rgb(190, 141, 141); */
+  width: 255px;
+  margin-right: 60px;  
+}
+
+.pink-item {
+  /* background-color: rgb(190, 141, 141); */
+  width: 243px;
+  margin-right: 50px;
+}
+
 .academy-item::after {
   content: "";
   position: absolute;
@@ -711,9 +729,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
+  /* -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
