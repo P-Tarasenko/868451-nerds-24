@@ -220,7 +220,7 @@ a {
   font-size: 18px;
   line-height: 1.67;
   color: black;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 
 .write-us__address {
@@ -287,7 +287,7 @@ a {
 }
 
 .partners-list li {
-  position: relative;
+  position: relative;  
 }
 
 .partners-list img {
@@ -721,7 +721,7 @@ a {
   padding-right: 43px;
   padding-bottom: 41px;
   padding-left: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 
   list-style: none;
 
@@ -835,6 +835,16 @@ a {
 .display-map {
   display: block;
   margin: 0 auto;
+  position: relative;
+  margin-top: -416px;
+}
+
+.display-map-pic {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  /* margin-bottom: -416px; */
+  z-index: 0;
 }
 
 .basket {
@@ -1027,7 +1037,7 @@ a {
   top: 54px;
   left: 372px;
 
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -1037,13 +1047,17 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          box-sizing: border-box; */
   width: 319px;
-  min-height: 308px;
+  height: 308px;
+  box-sizing: border-box;  
   padding-top: 33px;
   padding-left: 50px;
+  padding-bottom: 10px;
+  /* padding-bottom: 1px;   */
 
-  background-color: #ffffff;  
+  background-color: #ffffff;
+  overflow: auto;  
 }
 
 .write-us-button {
@@ -1052,7 +1066,8 @@ a {
 }
 
 .paragraph-headline {
-  margin-bottom: 7px;
+  /* margin-bottom: 17px; */
+  padding-bottom: 7px;
 }
 
 .paragraph-phone {
@@ -1063,7 +1078,7 @@ a {
 
 .map-marker {
   position: absolute;
-  top: 88px;
+  top: 88px;  
   right: 620px;
 }
 
