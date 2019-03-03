@@ -425,12 +425,13 @@ a {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 231px;
+  height: 231px;
   padding-bottom: 10px;
 
   text-align: center;
 
   background-color: #eeeeee;
+  overflow: auto;
 }
 
 .catalog-list__window p {
