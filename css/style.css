@@ -689,6 +689,10 @@ a {
   margin-right: 50px;
 }
 
+.popup-link {
+  color: black;
+}
+
 .academy-item::after {
   content: "";
   position: absolute;
