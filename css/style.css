@@ -1,7 +1,7 @@
-html,
+/* html,
 body {
   min-width: 1200px;
-}
+} */
 
 body {
   margin: 0;
@@ -269,7 +269,8 @@ a {
   justify-content: space-between; */
   width: 260px;
   padding: 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   list-style: none;
 }
@@ -556,7 +557,8 @@ a {
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -601,7 +603,8 @@ a {
   justify-content: space-between; */
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   list-style: none;
 }
@@ -634,7 +637,7 @@ a {
 
 .service {
   margin-bottom: 40px;
-  padding-right: 60px;
+  /* padding-right: 60px; */
   /* padding-bottom: 10px; */
 
   border-bottom: 2px solid #eeeeee;
@@ -744,7 +747,8 @@ a {
   padding-right: 43px;
   padding-bottom: 41px;
   padding-left: 30px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   list-style: none;
 
@@ -857,17 +861,23 @@ a {
 
 .display-map {
   display: block;
-  margin: 0 auto;
-  position: relative;
-  margin-top: -416px;
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin-top: -416px; */
 }
 
 .display-map-pic {
   position: relative;
   display: block;
-  margin: 0 auto;
+  /* left: 50%; */
+  /* margin-left: -720px; */
+  /* margin: 0 auto; */
   /* margin-bottom: -416px; */
   z-index: 0;
+  /* width: 1440px; */
+  height: 416px;
 }
 
 .basket {
@@ -1051,14 +1061,19 @@ a {
 
 .map {
   position: relative;
+  /* height: 416px; */
 
   margin-bottom: 53px;
 }
 
 .write-us {
   position: absolute;
-  top: 54px;
-  left: 372px;
+  /* top: 54px; */
+  top: 50%;
+  margin-top: -154px;
+  left: 50%;
+  margin-left: -580px;
+  /* left: 372px; */
 
   /* display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,7 +1088,8 @@ a {
           box-sizing: border-box; */
   width: 319px;
   height: 308px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 33px;
   padding-left: 50px;
   padding-bottom: 10px;
@@ -1426,8 +1442,10 @@ a {
   margin: 0;
   padding: 0;
   padding-right: 28px;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* background-color: rgb(233, 157, 157); */
 
   list-style: none;
@@ -1452,8 +1470,10 @@ margin-right: 26px;
   margin: 0;
   padding: 0;
   padding-left: 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* background-color: rgb(120, 190, 231); */
 
   list-style: none;
@@ -1650,7 +1670,7 @@ margin-right: 26px;
 
 .map iframe {
   width: 100%;
-  min-width: 1200px;
+  /* min-width: 1200px; */
 
   border: none;
 }
