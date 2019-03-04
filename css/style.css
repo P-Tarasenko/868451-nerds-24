@@ -666,12 +666,16 @@ a {
   -webkit-transform: translate(-10px, -3px);
   -ms-transform: translate(-10px, -3px);
   transform: translate(-10px, -3px);
+  width: 255px;
+  margin-right: 60px;  
 }
 
 .pink-item {
   -webkit-transform: translate(-13px, -3px);
   -ms-transform: translate(-13px, -3px);
   transform: translate(-13px, -3px);
+  width: 243px;
+  margin-right: 49px;
 }
 
 .academy-item {
@@ -682,14 +686,12 @@ a {
 
 .barbershop-item {
   /* background-color: rgb(190, 141, 141); */
-  width: 255px;
-  margin-right: 60px;  
+  
 }
 
 .pink-item {
   /* background-color: rgb(190, 141, 141); */
-  width: 243px;
-  margin-right: 50px;
+  
 }
 
 .popup-link {
@@ -1438,7 +1440,7 @@ a {
   /* -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; */
-  width: 300px;
+  /* width: 300px; */
   margin: 0;
   padding: 0;
   padding-right: 28px;
@@ -1452,7 +1454,7 @@ a {
 }
 
 .filter-inside-list li {
-margin-right: 26px;
+margin-right: 25px;
 }
 
 .filter-inside-list li:nth-child(3n) {
