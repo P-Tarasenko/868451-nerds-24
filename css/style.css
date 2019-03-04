@@ -270,7 +270,7 @@ a {
   width: 260px;
   padding: 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -598,13 +598,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; */
   margin: 0;
   padding: 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -637,9 +634,6 @@ a {
 
 .service {
   margin-bottom: 40px;
-  /* padding-right: 60px; */
-  /* padding-bottom: 10px; */
-
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -667,7 +661,7 @@ a {
   -ms-transform: translate(-10px, -3px);
   transform: translate(-10px, -3px);
   width: 255px;
-  margin-right: 60px;  
+  margin-right: 60px;
 }
 
 .pink-item {
@@ -679,19 +673,8 @@ a {
 }
 
 .academy-item {
-  /* background-color: rgb(190, 141, 141); */
   width: 250px;
   margin-right: 56px;
-}
-
-.barbershop-item {
-  /* background-color: rgb(190, 141, 141); */
-  
-}
-
-.pink-item {
-  /* background-color: rgb(190, 141, 141); */
-  
 }
 
 .popup-link {
@@ -750,7 +733,7 @@ a {
   padding-bottom: 41px;
   padding-left: 30px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
   list-style: none;
 
@@ -1091,7 +1074,7 @@ a {
   width: 319px;
   height: 308px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 33px;
   padding-left: 50px;
   padding-bottom: 10px;
@@ -1430,53 +1413,43 @@ a {
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
-  /* flex-wrap: wrap; */
 }
 
 .filter-inside-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; */
-  /* width: 300px; */
   margin: 0;
   padding: 0;
   padding-right: 28px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* background-color: rgb(233, 157, 157); */
+  box-sizing: border-box;
 
   list-style: none;
 }
 
 .filter-inside-list li {
-margin-right: 25px;
+  margin-right: 25px;
 }
 
 .filter-inside-list li:nth-child(3n) {
   margin-right: 0;
-  }
+}
 
 .filter-icon-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; */
   width: 60px;
   margin: 0;
   padding: 0;
   padding-left: 20px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  /* background-color: rgb(120, 190, 231); */
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -1498,11 +1471,6 @@ margin-right: 25px;
   font-size: 18px;
   color: black;
 }
-
-/* .item-icon-down {
-  margin-right: -7px;
-  margin-left: 20px;
-} */
 
 .filter-inside-list a {
   color: rgba(0, 0, 0, 0.3);
