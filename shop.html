@@ -6,7 +6,7 @@
   <title>Магазин</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="container-flex">        
+      <div class="container-flex">
         <section class="filters">
           <h2 class="visually-hidden">Фильтры</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -121,18 +121,24 @@
               <li><a href="#" class="filter-current">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
-              <li class="item-icon-down"><a href="#" class="item-icon-current"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
-              <li class="item-icon-up"><a href="#" class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
+            </ul>
+            <ul class="filter-icon-list">
+              <li class="item-icon-down"><a href="#" class="item-icon-current"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11" /></svg></a></li>
+              <li class="item-icon-up"><a href="#" class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="11"
+                    height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg></a></li>
             </ul>
           </div>
           <ul class="catalog-list">
             <li class="catalog-list__item">
               <article class="catalog-list__article">
-                <a href="#">
+                
                   <img class="display-img" src="img/sedona.jpg" width="360" height="576" alt="Ссылка на демонстрацию Sedona">
-                </a>
+                
                 <div class="catalog-list__window">
-                  <h4>Sedona</h4>
+                  <h4><a class="popup-link" href="sedona-popup.html">Sedona</a></h4>
                   <p class="sedona-description">Информационный сайт для туристов</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
@@ -140,11 +146,11 @@
             </li>
             <li class="catalog-list__item">
               <article class="catalog-list__article">
-                <a href="#">
+                
                   <img class="display-img" src="img/pink.jpg" width="360" height="576" alt="Ссылка на демонстрацию P!nk">
-                </a>
+                
                 <div class="catalog-list__window">
-                  <h4>Pink APP</h4>
+                  <h4><a class="popup-link" href="pink-popup.html">Pink APP</a></h4>
                   <p class="pink-description">Продуктовый лендинг приложения для iOS и Android</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
@@ -152,11 +158,11 @@
             </li>
             <li class="catalog-list__item">
               <article class="catalog-list__article">
-                <a href="#">
+                
                   <img class="display-img" src="img/barbershop.jpg" width="360" height="576" alt="Ссылка на демонстрацию Borodinski">
-                </a>
+                
                 <div class="catalog-list__window">
-                  <h4>Barbershop</h4>
+                  <h4><a class="popup-link" href="barbershop-popup.html">Barbershop</a></h4>
                   <p class="borodinski-description">Сайт салона красоты. Для мужчин, да.</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
@@ -164,11 +170,11 @@
             </li>
             <li class="catalog-list__item">
               <article class="catalog-list__article">
-                <a href="#">
+                
                   <img class="display-img" src="img/mishka.jpg" width="360" height="576" alt="Ссылка на демонстрацию Mishka">
-                </a>
+                
                 <div class="catalog-list__window">
-                  <h4>Mishka</h4>
+                  <h4><a class="popup-link" href="mishka-popup.html">Mishka</a></h4>
                   <p class="mishka-description">Интернет-магазин вязаных игрушек</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
@@ -176,11 +182,11 @@
             </li>
             <li class="catalog-list__item">
               <article class="catalog-list__article">
-                <a href="#">
+                
                   <img class="display-img" src="img/aplus.jpg" width="360" height="576" alt="Ссылка на демонстрацию A+">
-                </a>
+                
                 <div class="catalog-list__window">
-                  <h4>A+</h4>
+                  <h4><a class="popup-link" href="aplus-popup.html">A+</a></h4>
                   <p class="aplus-description">Лендинг курсов повышения квалификации</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
@@ -188,11 +194,11 @@
             </li>
             <li class="catalog-list__item">
               <article class="catalog-list__article">
-                <a href="#">
+                
                   <img class="display-img" src="img/kvast.jpg" width="360" height="576" alt="Ссылка на демонстрацию КВАСТ">
-                </a>
+                
                 <div class="catalog-list__window">
-                  <h4>КВАСТ</h4>
+                  <h4><a class="popup-link" href="kvast-popup.html">КВАСТ</a></h4>
                   <p class="kvast-description">Промо-сайт производителя крафтового кваса</p>
                   <a class="button catalog-list__button" href="#">9 900 РУБ.</a>
                 </div>
@@ -210,21 +216,28 @@
     </div>
   </main>
   <div class="map">
-    <iframe class="display-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab385fd1352831a0cc809f48df2613c1cb106e5d6d49925909bb0279c8d1889a5&amp;source=constructor" height="416" allowfullscreen></iframe>    
+    <div class="container">
+      <img class="display-map-pic" src="img/map-new.jpg" alt="Студия Nerds по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75"
+        width="1200" height="416">
+    </div>
+    <iframe class="display-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab385fd1352831a0cc809f48df2613c1cb106e5d6d49925909bb0279c8d1889a5&amp;source=constructor"
+      height="416" allowfullscreen></iframe>
     <div class="write-us">
       <h3 class="visually-hidden">Напишите нам</h3>
       <p class="paragraph-headline"><strong class="write-us__bold">Nёrds design studio</strong></p>
       <p class="write-us__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <p class="paragraph-phone">тел. +7 (812) 275-75-75</p>
-      <a href="#" class="button write-us-button">Напишите нам</a>
+      <a href="feedback.html" class="button write-us-button">Напишите нам</a>
     </div>
   </div>
   <footer class="footer container">
     <div class="footer-flex">
       <ul class="social-list">
-        <li><a class="social-list__link link-vk" href="https://vk.com"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a class="social-list__link link-fb" href="https://ru-ru.facebook.com"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="social-list__link link-insta" href="https://www.instagram.com"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li class="social-list__item"><a class="social-list__link link-vk" href="https://vk.com"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="social-list__item"><a class="social-list__link link-fb" href="https://ru-ru.facebook.com"><span
+              class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social-list__item"><a class="social-list__link link-insta" href="https://www.instagram.com"><span
+              class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <div class="ffd">
         <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
