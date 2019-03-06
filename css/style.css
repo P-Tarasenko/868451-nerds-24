@@ -1500,6 +1500,10 @@ a {
   fill: #231f20;
 }
 
+.item-icon-current:hover path {
+  fill: #a6a6a6;
+}
+
 .pic {
   margin-bottom: 36px;
 }
