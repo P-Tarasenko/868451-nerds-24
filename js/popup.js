@@ -32,13 +32,13 @@ link.addEventListener("click", function (evt) {
     user.value = storage;
     email.focus();
   } else {
-    user.focus(); 
+    user.focus();
   }
   if (storageEmail) {
     email.value = storageEmail;
     text.focus();
-  } 
-    
+  }
+
 })
 
 close.addEventListener("click", function (evt) {
@@ -84,5 +84,5 @@ form.addEventListener("submit", function (evt) {
     if (isStorageEmailSupport) {
     localStorage.setItem("email", email.value); }
   }
-  
+
 })
